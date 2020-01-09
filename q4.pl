@@ -24,7 +24,8 @@ f(Tokens, bracket(A), Rest) :- 'C'(Tokens, '(', X), e(X, A, Xs), 'C'(Xs, ')', Re
 
 
 number([D|Rest], n(D), Rest) :- number(D).
-identifier([D|Rest], id(B), Rest) :- char_type(D, prolog_var_start), atom_string(B, D).
+identifier([D|Rest], id(B), Rest) :- char_type(D, csymf), atom_string(B, D).
 
 parse(Tokens, Tree) :-
     e(Tokens, Tree, []).
+
