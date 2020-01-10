@@ -32,7 +32,8 @@ Complete the parser and test it.
 
 &rarr; &rarr; Test for the parser are also attached. The parser can read any valid C language identifier name.
 
-Exercise 5. A binary search tree can be represented as a Prolog term by using internal choice nodes
+## Exercise 5
+A binary search tree can be represented as a Prolog term by using internal choice nodes
 of the form nd (left, number, right) and tip leaves. Define a predicate inorder /2 that relates a search
 tree with the ordered list of its internal nodes. We will say that a binary tree is balanced iff the num-
 ber of nodes in its left and right subtrees differ in at most one. Define a predicate balanced/1 that
@@ -40,7 +41,8 @@ checks whether a binary search tree is balanced. Use the previous definitions to
 that balances a search tree, i.e. returns a tree that is balanced and has the same ordered list of internal
 nodes.
 
-Exercise 6. Define a predicate sudoku/1 that takes a list of lists of numbers (1 . . . 9) representing a
+## Exercise 6
+Define a predicate sudoku/1 that takes a list of lists of numbers (1 . . . 9) representing a
 completed Sudoku puzzle – as list of rows – and checks whether it is a legal solution. Use it to give a
 quick prototypical solver. Provide an experiment and analyze the efficiency.
 
